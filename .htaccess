@@ -1,0 +1,13 @@
+RewriteEngine On 
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ /207DAWProyectoDAW/es/index.php [L]
+
+RewriteCond %{HTTP:Accept-Language} ^pt [NC]
+RewriteRule ^$ /207DAWProyectoDAW/pt/index.html [L]
+
+RewriteRule ^$ /207DAWProyectoDAW/en/index.html [L]
+
+
+
+ErrorDocument 404 /207DAWProyectoDAW/error/404.html
