@@ -1,0 +1,18 @@
+;
+; BIND data file for jesus.local
+;
+$TTL	604800
+@	IN	SOA	jfg-used.jesus.local. jesus.fergon.1.educa.jcyl.es (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 3600 )	; Negative Cache TTL
+;
+@	IN	NS	jfg-used.jesus.local.
+;Registros Host
+@	IN	A	192.168.3.207
+jfg-used	IN	A	192.168.3.207
+;Registros Alias
+daw201	IN	CNAME	jfg-used.jesus.local.
+daw202	in	CNAME	jfg-used.jesus.local.
